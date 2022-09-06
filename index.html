@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random meme generator | 3kh0</title>
-    <link rel="stylesheet" type="text/css" href="/css/meme.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <h1 id="title">title</h1>
@@ -12,7 +12,7 @@
     <p>Link: <a target="_blank" id="postLink">postLink</a> | Sub: <span id="subreddit">subreddit</span> | Upvotes: <span id="ups">ups</span> <button onclick="location.reload();">Gimme another one!</button></p>
     <p style="color: red;">WARNING!<br>These are memes from the subreddits r/memes, r/dankmemes, and r/me_irl. There can be *intresting* content so please keep that in mind, we have already gotten rid of most NSFW stuff but some will still fall through.</p>
     <p>Credit to <a href="https://github.com/D3vd/Meme_Api" target="_blank" >D3vd on github</a> for the API</p>
-    <script src="/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
     <script>
       $.getJSON("https://meme-api.herokuapp.com/gimme", function (data) {
         const nsfw = data.nsfw;
